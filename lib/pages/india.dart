@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import '../fragments/my_drawer.dart';
 import '../fragments/feeds.dart';
 
-class LatestNews extends StatelessWidget {
+class IndiaNews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Trending Now"),
+        title: Text("Trending in India"),
       ),
       drawer: MyDrawer(),
-      body: Feeds(category: "latest")
+      body: Feeds(category: "india")
     );
   }
 }

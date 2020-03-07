@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import './pages/latest.dart';
+import './pages/tech.dart';
+import './pages/world.dart';
+import './pages/india.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,9 +17,9 @@ class MyApp extends StatelessWidget {
         initialRoute: "/latest",
         routes: {
           '/latest': (context) => LatestNews(),
-          '/india': (context) => LatestNews(),
-          '/tech': (context) => LatestNews(),
-          '/world': (context) => LatestNews(),
+          '/india': (context) => IndiaNews(),
+          '/tech': (context) => TechNews(),
+          '/world': (context) => WorldNews(),
         });
   }
 }
